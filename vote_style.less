@@ -1,0 +1,209 @@
+@import "styles/whole.less";
+@import "styles/layout.less";
+@import "styles/reset.css";
+#bundle{
+  .mini_image{
+    margin-top: 1vw;
+    height: 6vw;
+    max-height: 2.2rem;
+    width: 22%;
+    max-width: 2.55rem;
+  }
+  .mini-space{
+    .ib;
+    height: 7vw;
+    max-height: 2.8rem;
+  }
+  .lt-397{
+    width: 21%;
+  }
+}
+body {
+  //border: solid;
+  .mw;
+  margin: 0 auto;
+  header{
+    .pf-t0; /* 绝对定位fixed */
+    .df-vc; /*flex垂直居中*/
+    .w; /* 宽度100% */
+    .mw; /* 最大宽度 */
+    height: 2.8rem;
+    .bg-blue;
+    z-index: 999999;
+    .menu{
+      .pr;
+      left: .5rem;
+      width: 1.5rem;
+    }
+    span{
+      flex: 1;
+      .tac;
+      .fs26;
+      .wc;/* 字体白色 */
+    }
+    a .close{
+      .ib;
+      .pr;
+      right: .5rem;
+      width: 1.5rem;
+    }
+  }
+  main{
+    margin-top: 2.8rem;
+    margin-bottom: 5.5rem;
+    padding-bottom: 95vw;
+    .bg-blue;
+    .vote-hint{
+      .df-vc;
+      justify-content: space-between;
+      height: 2.8rem;
+      width: 100%;
+      .bg-light-blue;
+      span{
+        margin-left: 1rem;
+        .fs20;
+      }
+      a img{
+        margin-right: .2rem;
+        width: 2rem;
+      }
+    }
+    .t-arrow{
+      margin-left: 1.5rem;
+      width: 0;
+      height: 0;
+      border-width: 7px 4px 0 4px;
+      border-style: solid;
+      border-color: #b9e9f5 transparent transparent transparent;;
+    }
+    .click-hint{
+      margin-left: 1.3rem;
+      .wc;
+      .fs20;
+    }
+    .row{
+      //border: solid;
+      display: flex;
+      justify-content: space-between;
+      margin:0 auto;
+      width: 90%;
+      .single{
+        .ib;
+        width: 30%;
+        min-width: 4.5rem;
+        .rectangle{
+          .ib;
+          margin-top: 1rem;
+          width: 100%;
+          max-width: 11rem;
+          box-sizing: border-box;
+          border: 2px solid #ffffff;
+          .role{
+            //border: solid;
+            .df-vc;
+            justify-content: center;
+            height: 18vw;
+            max-height: 8rem;
+            font-size: 2rem;
+            background-color: #f5c97b;
+          }
+          @media screen and (max-width: 425px) {
+            .role{
+              font-size: 1.4rem;
+            }
+          }
+          @media screen and (max-width: 375px) {
+            .role{
+              .fs24;
+            }
+          }
+          .num{
+            .df-vc;
+            justify-content: center;
+            height: 5vw;
+            max-height: 2rem;
+            .fs24;
+            .wc;
+            background-color: #83b09a;
+          }
+          @media screen and (max-width: 425px) {
+            .num{
+              .fs20;
+            }
+          }
+          @media screen and (max-width: 375px) {
+            .num{
+              .fs08;
+            }
+          }
+        }
+        .rectangle:hover + .mini-icon .blade{
+          #bundle > .mini_image;
+          background: url(images/vote_icon.png) no-repeat;
+          background-position: 0 67%;
+          background-size: 100% 400%;
+        }
+        .rectangle:hover + .mini-icon .magnifier{
+          #bundle > .mini_image;
+          background: url(images/vote_icon.png) no-repeat;
+          background-position: 0 99%;
+          background-size: 100% 400%;
+        }
+        .rectangle:hover + .mini-icon .bead-green{
+          #bundle > .mini_image;
+          background: url(images/vote_icon.png) no-repeat;
+          background-position: 0 0;
+          background-size: 100% 400%;
+        }
+        .rectangle:hover + .mini-icon .bead-red{
+          #bundle > .mini_image;
+          background: url(images/vote_icon.png) no-repeat;
+          background-position: 0 34%;
+          background-size: 100% 400%;
+        }
+        .mini-icon{
+          //.tac;
+          display: flex;
+          justify-content: space-between;
+          .blade{
+            #bundle > .mini-space;
+          }
+          .magnifier{
+            .blade;
+          }
+          .bead-green{
+            .blade;
+          }
+          .bead-red{
+            .blade;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    .pf-b0;/*底部绝对定位*/
+    .tac;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.7rem;
+    .w;
+    .mw;
+    .bg-blue;
+    div{
+      .tac;
+      padding-top: 1.3rem;
+      width: 90%;
+      border-top: 1px solid #ffffff;
+      a button{
+        width: 80%;
+        height: 2.5rem;
+        .fs30;
+        .wc;
+        .btn-bg-orange;
+        border: none;
+      }
+    }
+
+  }
+}

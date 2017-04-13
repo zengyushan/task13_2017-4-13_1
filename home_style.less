@@ -1,0 +1,131 @@
+@import "styles/whole.less";
+@import "styles/layout.less";
+@import "styles/reset.css";
+#bundle{
+  .circle(){
+    .ib;
+    width: 9px;
+    height: 9px;
+    line-height: 9px;
+    border-radius: 50%;
+  }
+}
+@mt:1.4rem;
+body {
+  //.w;
+  .mw;
+  margin: 0 auto;
+  header {
+    .pf-t0; /* 绝对定位fixed */
+    .df-vc; /* flex垂直居中 */
+    .w; /* 宽度100% */
+    .mw; /* 最大宽度 */
+    height: 2.8rem;
+    .bg-blue;
+    z-index: 999999;
+    img {
+      margin-left: .8rem;
+      width: 1.5rem;
+    }
+  }
+  main {
+    padding: 0 1.4rem;
+    margin-top: 2.8rem;
+    padding-top: .2rem;
+    padding-bottom: 2.5rem;
+    .mw;
+    .bg-grey;
+    .last {
+      .tac; /* text-align为center */
+      margin-top: @mt;
+      height: 5.2rem;
+      .bg-white;
+      border: 1px solid #c9c9c9;
+      span {
+        height: 5.2rem;
+        line-height: 5.2rem;
+        .fs34;
+        color: #9a9a9a;
+      }
+      @media screen and (max-width: 380px) {
+        span{
+          font-size: 1.2rem;
+        }
+      }
+      img {
+        .fr; /* float:right */
+        margin-top: 1.6rem;
+        margin-right: .8rem;
+        width: 1.2rem;
+      }
+
+    }
+    .main-div{
+      margin-top: @mt;
+      border: 1px solid #c9c9c9;
+      .bg-white;
+      .title{
+        .df-vc; /* flex垂直居中*/
+        justify-content: center;
+        height: 4.5rem;
+        .fs37;
+        color: #fbb435;
+        border-bottom: 1px solid #fbb435;
+      }
+      .btns{
+        .pr; /* relative */
+        .ib;/* inline-block */
+        width: 100%;
+        .tac;
+        color: #787878;
+        a button{
+          .ib;
+          margin-top: 1.5rem;
+          width: 65vw;
+          max-width: 28rem;
+          height: 7rem;
+          .fs32;
+          color: #ffffff;
+          .bg-blue;
+          border: none;
+        }
+        div{
+          margin-top: 1.5rem;
+          .fs24;
+        }
+        @media screen and (max-width: 350px) {
+          div{
+            .fs20;
+          }
+        }
+        img{
+          .pa;
+          top:50%;
+          transform: translateY(-100%);
+          right: 1rem;
+          width: 1rem;
+        }
+        @media screen and (max-width: 390px) {
+          img{
+            right: .5rem;
+          }
+        }
+        @media screen and (max-width: 346px) {
+          img{
+            right: .2rem;
+          }
+        }
+
+        ul li{
+          #bundle > .circle;
+          .bg-grey;
+        }
+        ul .f-circle{
+          #bundle > .circle;
+          .bg-blue;
+        }
+      }
+
+    }
+  }
+}
